@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.imagens-slider {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.imagens-slider .slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    display: flex;
+    align-items: center;
+}
+
+.imagens-slider .mostrar {
+    opacity: 1;
+}
+
+.slide-rosa {
+    background-image: url(../imagens/flores-rosas.png);
+}
+
+.slide-verde {
+    background-image: url(../imagens/flores-verdes.png);
+}
+
+.slide-laranja {
+    background-image: url(../imagens/montanhas.png);
+}
+
+.slide-azul {
+    background-image: url(../imagens/lago.png);
+}
+
+.seta-voltar,
+.seta-avancar {
+    position: absolute;
+    z-index: 1;
+}
+
+.seta-voltar {
+    left: 4%;
+    transform: rotateY(180deg);
+}
+
+.seta-avancar {
+    right: 4%;
+    z-index: 1;
+}
+
+.opacidade {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.conteudo {
+    background-color: #fff;
+    margin-left: 180px;
+    padding: 65px 60px;
+    width: 620px;
+    border-radius: 10px;
+}
+
+.conteudo .titulo {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+.conteudo .texto {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.conteudo .botao {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.botao.rosa {
+    color: #C50000;
+}
+
+.botao.verde {
+    color: #D9DD10;
+}
+
+.botao.laranja {
+    color: #A63A17;
+}
+
+.botao.azul {
+    color: #10ACDD;
+}
+
+@media(max-width: 1440px) {
+    .conteudo .texto {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media(max-width: 1280px) {
+    .conteudo {
+        width: 580px;
+    }
+}
+
+@media(max-width: 856px) {
+    .conteudo {
+        width: 480px;
+        padding: 45px 40px;
+        margin: 0 auto;
+        padding: 45px 40px;
+        opacity: 0.7;
+    }
+}
+
+@media(max-width: 654px) {
+    .conteudo {
+        max-width: 420px;
+    }
+    
+    .conteudo .titulo {
+        font-size: 2.4rem;
+    }
+
+    .conteudo .descricao{
+        font-size: 1.6rem;
+    }
+
+    .conteudo .botao{
+        font-size: 2.3rem;
+    }
+}
+
+@media(max-width: 465px){
+    .conteudo {
+        width: 320px;
+        margin: 2rem auto;
+    }
+
+    .conteudo .titulo, .conteudo .descricao{
+        margin-bottom: 2rem;
+    }
+
+    .conteudo .descricao{
+        font-size: 1.4rem;
+    }
+}
