@@ -19,3 +19,6 @@
 Um projeto bem empolgante e que me permitiu exercitar e dar os meus primeiros passos com JavaScript.
 O desafio maior foi identificar como construir o loop e quando sair dele.
 Exercício do curso de desenvolvimento frontend do curso DevQuest (Dev em Dobro).
+
+## Preview
+![Preview](src/imagens/preview.gif)
